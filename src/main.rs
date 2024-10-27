@@ -1,9 +1,10 @@
 use std::io;
 use std::fs;
+use colored::Colorize;
 
 fn main() {
     let logo = fs::read_to_string("./assets/logo.txt").expect("Can't open the impressiv logo...");
-    println!("{logo}");
+    println!("{}",logo.green());
 
     loop {
         println!("What is your command, Master!");
