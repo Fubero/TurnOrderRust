@@ -3,7 +3,7 @@ use std::fs;
 use colored::Colorize;
 
 fn main() {
-    let logo = fs::read_to_string("./assets/logo.txt").expect("Can't open the impressiv logo...");
+    let logo = fs::read_to_string("./assets/logo.txt").expect("Can't open the impressive logo...");
     println!("{}",logo.green());
 
     loop {
